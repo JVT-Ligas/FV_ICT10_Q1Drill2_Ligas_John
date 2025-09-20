@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<title> Drill 2: Working on Strings </title>
+
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: lightblue;
+        padding: 40px;
+        text-align: center;
+    }
+
+    h1{
+        color: #333;
+        margin-bottom: 24px;
+        font-size: 32px;
+    }
+    .form-container {
+        background: #fff;
+        padding: 32px 40px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        max-width: 600px;
+        margin: auto;
+    }
+    input[type="text"] {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+    button {
+        background: #0078d4;
+        color: #fff;
+        border: none;
+        padding: 10px 18px;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #005fa3;
+    }
+    #string {
+        background: #eaf6ff;
+        border-radius: 6px;
+        padding: 24px;      
+        margin-top: 24px;
+        font-size: 20px;    
+        white-space: pre-wrap;
+        border: 1px solid #b3d7ff;
+    }
+</style>
+
+<body>
+
+    <h1> String Showcase: My Basic Info</h1>
+
+    <div class="form-container">
+        <input id="name" type="text" placeholder="Name">
+        <input id="age" type="text" placeholder="Age">
+        <input id="school" type="text" placeholder="School">
+        <button py-click="on_click">Submit</button>
+        <pre id="string"></pre>
+    </div>
+    <script type="py" src ="main.py"></script>
+</body>
+</html>
